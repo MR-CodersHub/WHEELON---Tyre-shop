@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyre Care & Alignment Guides | ApexTyre Center</title>
+  <meta name="description" content="Read expert tyre maintenance guides, wheel alignment tips, tyre pressure calibration advice, and seasonal tyre buying guides from certified technicians.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-info">
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>104 Auto Hub Parkway, Metro Automotive Zone</span>
+        </div>
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          <span>Mon - Sat: 8:00 AM - 8:00 PM | Sun: 9:00 AM - 5:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="WHEELON Home">
+        <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="40" height="40">
+        <div class="logo-text-wrap">
+          <span class="logo-brand-name">WHEEL<span>ON</span></span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="toggle-btn theme-toggle-btn header-icon-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:#f59e0b;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </span>
+        </button>
+
+        <button class="toggle-btn rtl-toggle-btn" aria-label="Toggle Language Direction" title="Toggle RTL Mode">
+          <span class="rtl-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </span>
+          <span class="rtl-text">RTL</span>
+        </button>
+
+        <button class="btn btn-primary btn-sm" onclick="openModal('appointmentModal')">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+          <span>Book Service</span>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle Mobile Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div>
+      <a href="index.html" class="logo" aria-label="WHEELON Home" style="margin-bottom: 24px;">
+        <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="46" height="46">
+        <div class="logo-text-wrap">
+          <span class="logo-brand-name">WHEEL<span>ON</span></span>
+        </div>
+      </a>
+      <div class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="home2.html" class="mobile-nav-link">Home 2 (Promo)</a>
+        <a href="about.html" class="mobile-nav-link">About Center</a>
+        <a href="services.html" class="mobile-nav-link">Our Services</a>
+        <a href="products.html" class="mobile-nav-link">Tyre Showroom</a>
+        <a href="blog.html" class="mobile-nav-link active">Tyre Care Blog</a>
+        <a href="contact.html" class="mobile-nav-link">Contact & Book</a>
+      </div>
+    </div>
+    
+    <div style="margin-top: 24px;">
+      <a href="tel:+18005558973" class="btn btn-secondary" style="width: 100%; margin-bottom: 12px;">
+        Call +1 (800) 555-8973
+      </a>
+      <button class="btn btn-primary" style="width: 100%;" onclick="openModal('appointmentModal')">
+        Book Appointment
+      </button>
+    </div>
+  </div>
+
+  <!-- Blog Hero Banner -->
+  <section class="page-hero-banner" style="background: var(--hero-overlay), url('https://images.unsplash.com/photo-1578844251758-2f71da64c96f?q=80&w=1600&auto=format&fit=crop') center/cover; text-align:center;">
+    <div class="container">
+      <div class="section-tag">Automotive Knowledge Hub</div>
+      <h1>Tyre Care &amp; <span>Alignment Guides</span></h1>
+      <p class="hero-subtitle">Expert advice to maximize tread life, improve fuel economy, and stay safe on the road.</p>
+    </div>
+  </section>
+
+  <!-- Featured Blog Article -->
+  <section class="section-padding-sm" style="background-color: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="alignment-spotlight">
+        <div class="grid grid-2 align-center">
+          <div>
+            <span class="badge badge-red" style="margin-bottom:10px;">Featured Guide</span>
+            <h2>5 Warning Signs Your Vehicle Needs Immediate Wheel Alignment</h2>
+            <p style="color:var(--text-muted); margin-bottom:14px; font-size:0.925rem;">
+              Driving with misaligned wheels degrades your tyres 3x faster and burns significantly more fuel. Learn how to spot camber and toe misalignment early.
+            </p>
+            <div style="font-size:0.8rem; color:var(--text-muted); margin-bottom:18px;">
+              Published: Aug 10, 2026 | 5 Min Read | By Chief Tech Alex Hendricks
+            </div>
+            <button class="btn btn-primary" onclick="openBlogArticle(1)">Read Full Guide &rarr;</button>
+          </div>
+          <div>
+            <div class="spotlight-image-wrapper" style="max-height: 320px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-color); box-shadow: var(--shadow-md); position: relative;">
+              <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop" alt="Wheel Alignment Guide" class="spotlight-image" style="width: 100%; height: 320px; object-fit: cover;">
+              <div class="spotlight-badge-overlay" style="position:absolute; bottom:14px; left:14px; background:rgba(15,18,26,0.85); backdrop-filter:blur(8px); padding:8px 14px; border-radius:var(--radius-md); border:1px solid rgba(255,255,255,0.15);">
+                <div style="font-size:0.7rem; color:#a0a8b8; font-family:var(--font-heading); text-transform:uppercase; font-weight:700;">FEATURED TECH GUIDE</div>
+                <div style="font-family:var(--font-heading); font-size:1.05rem; font-weight:900; color:var(--primary-red);">3D ALIGNMENT AUDIT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW BLOG SECTION 1: Interactive Pressure PSI Reference Chart -->
+  <section class="section-padding" style="background-color: var(--bg-surface-elevated); border-y:1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Quick Reference</div>
+        <h2>Recommended Tyre Pressure (PSI) Guide</h2>
+        <p>Reference optimal cold pressure ranges based on your vehicle segment and load conditions.</p>
+      </div>
+
+      <div class="grid grid-4 text-center">
+        <div style="background:var(--bg-surface); padding:20px 14px; border-radius:var(--radius-md); border:1px solid var(--border-color);">
+          <h4 style="margin-bottom:6px;">Sedans & Hatchbacks</h4>
+          <div style="font-family:var(--font-heading); font-size:1.6rem; font-weight:900; color:var(--primary-red); margin-bottom:4px;">32 - 35 PSI</div>
+          <p style="font-size:0.775rem; color:var(--text-muted); margin:0;">Optimal balance between comfort and low rolling resistance.</p>
+        </div>
+
+        <div style="background:var(--bg-surface); padding:20px 14px; border-radius:var(--radius-md); border:1px solid var(--border-color);">
+          <h4 style="margin-bottom:6px;">SUVs & Crossovers</h4>
+          <div style="font-family:var(--font-heading); font-size:1.6rem; font-weight:900; color:var(--primary-red); margin-bottom:4px;">35 - 38 PSI</div>
+          <p style="font-size:0.775rem; color:var(--text-muted); margin:0;">Supports heavier curb weight and luggage capacity.</p>
+        </div>
+
+        <div style="background:var(--bg-surface); padding:20px 14px; border-radius:var(--radius-md); border:1px solid var(--border-color);">
+          <h4 style="margin-bottom:6px;">Performance Sports Cars</h4>
+          <div style="font-family:var(--font-heading); font-size:1.6rem; font-weight:900; color:var(--primary-red); margin-bottom:4px;">30 - 33 PSI</div>
+          <p style="font-size:0.775rem; color:var(--text-muted); margin:0;">Maximizes warm contact patch grip during dynamic cornering.</p>
+        </div>
+
+        <div style="background:var(--bg-surface); padding:20px 14px; border-radius:var(--radius-md); border:1px solid var(--border-color);">
+          <h4 style="margin-bottom:6px;">Heavy EVs / Batteries</h4>
+          <div style="font-family:var(--font-heading); font-size:1.6rem; font-weight:900; color:var(--primary-red); margin-bottom:4px;">38 - 42 PSI</div>
+          <p style="font-size:0.775rem; color:var(--text-muted); margin:0;">Protects sidewalls from heavy electric battery pack mass.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Latest Articles</div>
+        <h2>Tyre Maintenance & Tech Insights</h2>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Article 1 -->
+        <div class="blog-card">
+          <div class="blog-image-wrap">
+            <img src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?q=80&w=600&auto=format&fit=crop" alt="Tyre Pressure Article">
+            <span class="blog-category-badge">Maintenance</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Aug 05, 2026</span>
+              <span>4 Min Read</span>
+            </div>
+            <h3 class="blog-title"><a href="#" onclick="openBlogArticle(2); return false;">How Incorrect Tyre Pressure Destroys Your Tread Life</a></h3>
+            <p class="blog-excerpt">Under-inflation causes excessive shoulder wear, while over-inflation reduces center contact area. Discover the correct PSI formula.</p>
+            <button class="btn btn-secondary btn-sm" onclick="openBlogArticle(2)">Read Article</button>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="blog-card">
+          <div class="blog-image-wrap">
+            <img src="https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=600&auto=format&fit=crop" alt="All Season vs Summer Tyres">
+            <span class="blog-category-badge">Buying Guide</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Jul 28, 2026</span>
+              <span>6 Min Read</span>
+            </div>
+            <h3 class="blog-title"><a href="#" onclick="openBlogArticle(3); return false;">All-Season vs Performance Tyres: Which One Do You Need?</a></h3>
+            <p class="blog-excerpt">Comparing rubber compound stiffness, tread block patterns, wet grip ratings, and braking distance differences.</p>
+            <button class="btn btn-secondary btn-sm" onclick="openBlogArticle(3)">Read Article</button>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="blog-card">
+          <div class="blog-image-wrap">
+            <img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?q=80&w=600&auto=format&fit=crop" alt="Nitrogen vs Air">
+            <span class="blog-category-badge">Tech Tips</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>Jul 19, 2026</span>
+              <span>3 Min Read</span>
+            </div>
+            <h3 class="blog-title"><a href="#" onclick="openBlogArticle(4); return false;">Is Nitrogen Tyre Inflation Worth It? Honest Mechanic Review</a></h3>
+            <p class="blog-excerpt">Exploring the science of nitrogen gas molecules, temperature stability, moisture prevention, and long-term pressure retention.</p>
+            <button class="btn btn-secondary btn-sm" onclick="openBlogArticle(4)">Read Article</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW BLOG SECTION 2: Tyre Lifespan Risk Estimator Widget -->
+  <section class="section-padding" style="background-color: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Interactive Tool</div>
+        <h2>Tyre Age & Remaining Lifespan Estimator</h2>
+        <p>Rubber hardens and loses grip over time regardless of tread depth. Calculate your tyre's safety score.</p>
+      </div>
+
+      <div style="max-width:680px; margin:0 auto; background:var(--bg-surface); padding:28px; border-radius:var(--radius-lg); border:1px solid var(--border-color); box-shadow:var(--shadow-md);">
+        <div class="grid grid-2" style="gap:16px; margin-bottom:20px;">
+          <div class="form-group" style="margin:0;">
+            <label class="form-label">Tyre Age (Years since DOT Code)</label>
+            <select class="form-control form-select" id="blogAge" onchange="calcTyreHealth()">
+              <option value="1">1 - 2 Years (Fresh Rubber)</option>
+              <option value="3" selected>3 - 4 Years (Mid Life)</option>
+              <option value="5">5+ Years (Aging Compound)</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin:0;">
+            <label class="form-label">Annual Driving Distance</label>
+            <select class="form-control form-select" id="blogKm" onchange="calcTyreHealth()">
+              <option value="10">Under 10,000 km / Year</option>
+              <option value="15" selected>10,000 - 20,000 km / Year</option>
+              <option value="25">Over 25,000 km / Year</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-result-row" style="display:flex; align-items:center; justify-content:space-between; padding-top:16px; border-top:1px solid var(--border-color); flex-wrap:wrap; gap:14px;">
+          <div>
+            <div style="font-size:0.8rem; color:var(--text-muted);">Estimated Remaining Safe Driving:</div>
+            <div style="font-family:var(--font-heading); font-size:1.6rem; font-weight:800; color:var(--primary-red);" id="blogHealthDisplay">~18 Months Remaining</div>
+          </div>
+          <button class="btn btn-primary" onclick="openModal('appointmentModal')">Book Workshop Tread Check</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW BLOG SECTION 3: Tyre Care & Storage FAQ Accordion -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Blog Knowledge FAQ</div>
+        <h2>Tyre Maintenance & Care FAQ</h2>
+      </div>
+
+      <div class="faq-accordion-container">
+        <div class="faq-accordion-item open">
+          <div class="faq-accordion-header">
+            <span>Where can I find the DOT manufacturing date code on my tyre?</span>
+            <div class="faq-accordion-icon">&darr;</div>
+          </div>
+          <div class="faq-accordion-body">
+            Look for a 4-digit number at the end of the DOT string on your tyre's outer sidewall (e.g. **2422**). The first two digits indicate the week of manufacture (Week 24) and the last two digits indicate the year (2022).
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <span>How should spare seasonal tyres be stored when not in use?</span>
+            <div class="faq-accordion-icon">&darr;</div>
+          </div>
+          <div class="faq-accordion-body">
+            Store tyres in a clean, cool, dark room away from direct sunlight, moisture, and electric motors (which emit rubber-degrading ozone). Tyres on rims should be hung or stacked horizontally; loose tyres should be stored standing upright.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- The Weekend Mechanic & Performance Driving Journal Section -->
+  <section class="newsletter-section-modern newsletter-theme-editorial">
+    <div class="container">
+      <div class="newsletter-box-modern">
+        <div class="newsletter-tag-pill">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          <span>The Friday Pitstop Dispatch</span>
+        </div>
+
+        <h2 class="newsletter-title-modern">Actionable Auto &amp; Tyre Guides Every Friday Morning</h2>
+        <p class="newsletter-subtitle-modern">Join 8,500+ car enthusiasts and daily commuters who read our 5-minute teardowns on hot tyre pressure dynamics, coilover alignments, and head-to-head tyre tests.</p>
+
+        <form class="newsletter-form-row" onsubmit="event.preventDefault(); showToast('Subscribed! Look out for our Friday automotive dispatch in your inbox.', 'success');">
+          <input type="email" class="form-control" placeholder="Enter your email for Friday Dispatch..." required>
+          <button type="submit" class="btn btn-primary" style="background:#ea580c; border-color:#ea580c;">
+            <span>Get Friday Dispatch ☕</span>
+          </button>
+        </form>
+
+        <div class="newsletter-trust-row">
+          <span class="newsletter-trust-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            5-Minute Practical Read &bull; No Fluff
+          </span>
+          <span class="newsletter-trust-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Real Benchmarked Braking &amp; Noise Tests
+          </span>
+          <span class="newsletter-trust-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Exclusive DIY Alignment &amp; Care Checklists
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-4 footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="WHEELON Home" style="margin-bottom: 16px;">
+            <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="46" height="46">
+            <div class="logo-text-wrap">
+              <span class="logo-brand-name">WHEEL<span>ON</span></span>
+            </div>
+          </a>
+          <p>Your trusted 3D Laser Wheel Alignment & Genuine Tyre Showroom.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home Showroom</a>
+            <a href="home2.html">Home 2 (Promo Offers)</a>
+            <a href="about.html">About Center</a>
+            <a href="services.html">Services & Alignment</a>
+            <a href="products.html">Tyre Showroom Catalog</a>
+            <a href="blog.html">Tyre Care Articles</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html">3D Computerized Alignment</a>
+            <a href="services.html">Dynamic Wheel Balancing</a>
+            <a href="services.html">Tyre Replacement & Fitting</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact & Location</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>104 Auto Hub Parkway, Metro Automotive Zone</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ApexTyre & Wheel Alignment Center. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="footer-legal-sep">•</span>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Blog Article Reader Modal -->
+  <div class="modal-backdrop" id="blogReaderModal">
+    <div class="modal-content" style="max-width:700px;">
+      <div class="modal-header">
+        <h3 id="blogArticleTitle" style="margin:0; font-size:1.2rem;">Article Title</h3>
+        <button class="modal-close" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body" id="blogArticleBody">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Appointment Modal -->
+  <div class="modal-backdrop" id="appointmentModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="margin:0; font-size:1.2rem;">Book Service Appointment</h3>
+        <button class="modal-close" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="appointment-form-js">
+          <div class="grid grid-2">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="e.g. +1 555-0192" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Required Service *</label>
+            <select name="service" class="form-control form-select" required>
+              <option value="3D Laser Wheel Alignment">3D Laser Wheel Alignment ($49+)</option>
+              <option value="Dynamic Wheel Balancing">Dynamic Wheel Balancing</option>
+              <option value="Tyre Replacement & Fitting">Tyre Replacement & Fitting</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+            <span>Confirm Appointment Booking</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+  <script>
+    function calcTyreHealth() {
+      const age = parseInt(document.getElementById('blogAge').value);
+      const km = parseInt(document.getElementById('blogKm').value);
+      let months = Math.max(6, 48 - (age * 7) - (km / 2));
+      document.getElementById('blogHealthDisplay').textContent = '~' + Math.round(months) + ' Months Remaining';
+    }
+
+    function openBlogArticle(id) {
+      const titleEl = document.getElementById('blogArticleTitle');
+      const bodyEl = document.getElementById('blogArticleBody');
+      const articles = {
+        1: {
+          title: "5 Warning Signs Your Vehicle Needs Immediate Wheel Alignment",
+          content: `<p>Driving with unaligned wheels creates uneven tyre friction and degrades steering safety. Here are the 5 major indicators:</p>
+          <ul style="margin:16px 0; padding-left:20px; display:flex; flex-direction:column; gap:8px;">
+            <li><strong>1. Vehicle Pulling to One Side:</strong> Constant drift when releasing the steering wheel on a flat road.</li>
+            <li><strong>2. Steering Wheel Off-Center:</strong> Steering wheel sits crooked while driving straight.</li>
+            <li><strong>3. Rapid Inner or Outer Shoulder Wear:</strong> Asymmetrical tread wear across front or rear tyres.</li>
+            <li><strong>4. Steering Wheel Vibration:</strong> Oscillating feedback at high speeds.</li>
+            <li><strong>5. Squealing Tyres in Gentle Turns:</strong> Misaligned toe angles cause tyres to scrub around corners.</li>
+          </ul>`
+        },
+        2: {
+          title: "How Incorrect Tyre Pressure Destroys Your Tread Life",
+          content: `<p>Tyre pressure affects contact patch dynamics. Under-inflation creates flex and high heat on sidewalls, leading to rapid shoulder wear. Over-inflation crowns the center of the tyre, reducing grip and causing harsh rides.</p>`
+        },
+        3: {
+          title: "All-Season vs Performance Tyres: Which One Do You Need?",
+          content: `<p>Performance tyres feature softer silica-infused compounds engineered for high cornering grip above 7°C. All-season tyres utilize harder rubber compounds and dense siping to maintain flexibility in moderate winter conditions.</p>`
+        },
+        4: {
+          title: "Is Nitrogen Tyre Inflation Worth It? Honest Mechanic Review",
+          content: `<p>Nitrogen molecules are larger than oxygen, meaning they migrate through tyre rubber 3x slower. Nitrogen is also free of moisture, keeping rim alloy surfaces free from interior corrosion over time.</p>`
+        }
+      };
+
+      const article = articles[id] || articles[1];
+      titleEl.textContent = article.title;
+      bodyEl.innerHTML = article.content;
+      openModal('blogReaderModal');
+    }
+  </script>
+</body>
+</html>

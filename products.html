@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tyre Showroom & Catalog | ApexTyre Center</title>
+  <meta name="description" content="Browse our complete stock of genuine tyres from Michelin, Bridgestone, Goodyear, Continental, Pirelli, and Yokohama. Filter by size, vehicle type, and brand.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-info">
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <span>104 Auto Hub Parkway, Metro Automotive Zone</span>
+        </div>
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+          <span>Mon - Sat: 8:00 AM - 8:00 PM | Sun: 9:00 AM - 5:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="WHEELON Home">
+        <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="40" height="40">
+        <div class="logo-text-wrap">
+          <span class="logo-brand-name">WHEEL<span>ON</span></span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link active">Products</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="toggle-btn theme-toggle-btn header-icon-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Dark/Light Mode">
+          <span class="theme-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="color:#f59e0b;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </span>
+        </button>
+
+        <button class="toggle-btn rtl-toggle-btn" aria-label="Toggle Language Direction" title="Toggle RTL Mode">
+          <span class="rtl-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </span>
+          <span class="rtl-text">RTL</span>
+        </button>
+
+        <button class="btn btn-primary btn-sm" onclick="openModal('appointmentModal')">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
+          <span>Book Service</span>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle Mobile Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div>
+      <a href="index.html" class="logo" aria-label="WHEELON Home" style="margin-bottom: 24px;">
+        <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="46" height="46">
+        <div class="logo-text-wrap">
+          <span class="logo-brand-name">WHEEL<span>ON</span></span>
+        </div>
+      </a>
+      <div class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="home2.html" class="mobile-nav-link">Home 2 (Promo)</a>
+        <a href="about.html" class="mobile-nav-link">About Center</a>
+        <a href="services.html" class="mobile-nav-link">Our Services</a>
+        <a href="products.html" class="mobile-nav-link active">Tyre Showroom</a>
+        <a href="blog.html" class="mobile-nav-link">Tyre Care Blog</a>
+        <a href="contact.html" class="mobile-nav-link">Contact & Book</a>
+      </div>
+    </div>
+    
+    <div style="margin-top: 24px;">
+      <a href="tel:+18005558973" class="btn btn-secondary" style="width: 100%; margin-bottom: 12px;">
+        Call +1 (800) 555-8973
+      </a>
+      <button class="btn btn-primary" style="width: 100%;" onclick="openModal('appointmentModal')">
+        Book Appointment
+      </button>
+    </div>
+  </div>
+
+  <!-- Products Hero Banner -->
+  <section class="page-hero-banner" style="background: var(--hero-overlay), url('https://images.unsplash.com/photo-1543465077-db45d34b88a5?q=80&w=1600&auto=format&fit=crop') center/cover; text-align:center;">
+    <div class="container">
+      <div class="section-tag">Official Tyre Showroom</div>
+      <h1>Tyre &amp; Wheel <span>Inventory</span></h1>
+      <p class="hero-subtitle">Search and filter 100% genuine tyres with instant professional fitting availability.</p>
+    </div>
+  </section>
+
+  <!-- Main Showroom Section -->
+  <section class="section-padding">
+    <div class="container">
+      
+      <!-- Filter Bar -->
+      <div class="products-filter-wrapper">
+        <div class="filter-row-primary">
+          <div class="category-tabs-scroll">
+            <button class="category-tab-btn active" data-category="all">All Tyres</button>
+            <button class="category-tab-btn" data-category="car">Passenger Car</button>
+            <button class="category-tab-btn" data-category="suv">SUV & 4x4</button>
+            <button class="category-tab-btn" data-category="performance">Performance & Sport</button>
+            <button class="category-tab-btn" data-category="bike">Bike & Moto</button>
+            <button class="category-tab-btn" data-category="commercial">Commercial Van</button>
+          </div>
+          
+          <div style="font-weight:700; color:var(--primary-red);" id="resultsCount">Loading Inventory...</div>
+        </div>
+
+        <div class="filter-controls-row">
+          <div class="form-group" style="margin:0;">
+            <input type="text" id="productSearchInput" class="form-control" placeholder="Search model, brand or size (e.g. Michelin, 205/55)...">
+          </div>
+
+          <div class="form-group" style="margin:0;">
+            <select class="form-control form-select" id="brandFilter">
+              <option value="all">All Brands</option>
+              <option value="Michelin">Michelin</option>
+              <option value="Bridgestone">Bridgestone</option>
+              <option value="Goodyear">Goodyear</option>
+              <option value="Continental">Continental</option>
+              <option value="Pirelli">Pirelli</option>
+              <option value="Yokohama">Yokohama</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin:0;">
+            <select class="form-control form-select" id="rimFilter">
+              <option value="all">All Rim Sizes</option>
+              <option value="R15">R15</option>
+              <option value="R16">R16</option>
+              <option value="R17">R17</option>
+              <option value="R18">R18</option>
+              <option value="R19">R19</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin:0;">
+            <select class="form-control form-select" id="productSortSelect">
+              <option value="featured">Sort by: Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-3" id="productsGrid">
+        <!-- Rendered via js/products.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REDESIGNED SECTION 1: EU Tyre Label & Specification Decoder Guide -->
+  <section class="section-padding" style="background-color: var(--bg-surface-elevated); border-y:1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header text-center" style="margin-bottom:36px;">
+        <div class="section-tag">Official Certification Standard</div>
+        <h2>Understanding Certified EU Tyre Safety Labels</h2>
+        <p style="max-width:680px; margin:0 auto;">Every tyre in our showroom includes official European Union certified ratings for wet braking grip, fuel efficiency index, and exterior pass-by noise.</p>
+      </div>
+
+      <div class="grid grid-3" style="gap:24px;">
+        <!-- Card 1: Wet Grip -->
+        <div class="eu-label-card-modern">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div class="eu-label-badge eu-badge-green">A</div>
+              <div>
+                <h4 style="margin:0; font-weight:800; font-size:1.05rem;">Wet Braking Grip</h4>
+                <span style="font-size:0.75rem; color:#10b981; font-weight:700; text-transform:uppercase;">Class A Maximum Safety</span>
+              </div>
+            </div>
+          </div>
+          
+          <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.5; margin-bottom:16px;">
+            Class A certified tread compounds stop up to <strong>18 meters shorter</strong> on wet asphalt at 80 km/h compared to Class E budget tyres.
+          </p>
+
+          <div style="background:var(--bg-surface-elevated); border-radius:var(--radius-md); padding:10px 12px; border:1px solid var(--border-color);">
+            <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:4px;">
+              <span>Emergency Wet Stopping</span>
+              <span style="color:#10b981;">18m Shorter Stop</span>
+            </div>
+            <div style="width:100%; height:6px; background:rgba(0,0,0,0.1); border-radius:3px; overflow:hidden;">
+              <div style="width:95%; height:100%; background:#10b981;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Fuel Efficiency -->
+        <div class="eu-label-card-modern">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div class="eu-label-badge eu-badge-blue">B</div>
+              <div>
+                <h4 style="margin:0; font-weight:800; font-size:1.05rem;">Fuel Efficiency Index</h4>
+                <span style="font-size:0.75rem; color:#2563eb; font-weight:700; text-transform:uppercase;">Class B Low Resistance</span>
+              </div>
+            </div>
+          </div>
+          
+          <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.5; margin-bottom:16px;">
+            Low rolling resistance silica rubber compounds save up to <strong>0.42 liters of fuel</strong> per 100 km driven across annual highway commuting.
+          </p>
+
+          <div style="background:var(--bg-surface-elevated); border-radius:var(--radius-md); padding:10px 12px; border:1px solid var(--border-color);">
+            <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:4px;">
+              <span>Fuel Consumption Savings</span>
+              <span style="color:#2563eb;">-0.42L / 100km</span>
+            </div>
+            <div style="width:100%; height:6px; background:rgba(0,0,0,0.1); border-radius:3px; overflow:hidden;">
+              <div style="width:88%; height:100%; background:#2563eb;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Exterior Noise -->
+        <div class="eu-label-card-modern">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px;">
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div class="eu-label-badge eu-badge-red">68</div>
+              <div>
+                <h4 style="margin:0; font-weight:800; font-size:1.05rem;">Exterior Noise Rating</h4>
+                <span style="font-size:0.75rem; color:var(--primary-red); font-weight:700; text-transform:uppercase;">68 dB Ultra-Quiet Comfort</span>
+              </div>
+            </div>
+          </div>
+          
+          <p style="font-size:0.825rem; color:var(--text-muted); line-height:1.5; margin-bottom:16px;">
+            Measures exterior pass-by tyre hum noise in decibels. Lower dB ratings guarantee silent cabin acoustics on long-distance highway cruises.
+          </p>
+
+          <div style="background:var(--bg-surface-elevated); border-radius:var(--radius-md); padding:10px 12px; border:1px solid var(--border-color);">
+            <div style="display:flex; justify-content:space-between; font-size:0.75rem; font-weight:700; margin-bottom:4px;">
+              <span>Cabin Noise Insulation</span>
+              <span style="color:var(--primary-red);">68 dB Class Rating</span>
+            </div>
+            <div style="width:100%; height:6px; background:rgba(0,0,0,0.1); border-radius:3px; overflow:hidden;">
+              <div style="width:92%; height:100%; background:var(--primary-red);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW PRODUCTS SECTION 2: Side-by-Side Tyre Model Spec Comparison Drawer -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Model Comparison</div>
+        <h2>Compare Popular Tyre Specifications</h2>
+        <p>Direct side-by-side spec evaluation to help you choose between luxury comfort or high-speed sport performance.</p>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table style="width:100%; border-collapse:collapse; background:var(--bg-surface); border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--border-color); font-size:0.85rem;">
+          <thead>
+            <tr style="background:var(--bg-dark-section); color:#fff; text-align:left; font-family:var(--font-heading);">
+              <th style="padding:14px 16px;">FEATURE / SPEC</th>
+              <th style="padding:14px 16px; color:var(--primary-red);">MICHELIN PILOT SPORT 5</th>
+              <th style="padding:14px 16px;">BRIDGESTONE TURANZA T005</th>
+              <th style="padding:14px 16px;">GOODYEAR EAGLE F1 ASYM 6</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom:1px solid var(--border-color);">
+              <td style="padding:12px 16px; font-weight:700;">Category</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">Ultra High Performance</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">Premium Touring / Car</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">Sport Performance</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-color);">
+              <td style="padding:12px 16px; font-weight:700;">Wet Grip Rating</td>
+              <td style="padding:12px 16px; font-weight:700; color:var(--success-green);">Class A</td>
+              <td style="padding:12px 16px; font-weight:700; color:var(--success-green);">Class A</td>
+              <td style="padding:12px 16px; font-weight:700; color:var(--success-green);">Class A</td>
+            </tr>
+            <tr style="border-bottom:1px solid var(--border-color);">
+              <td style="padding:12px 16px; font-weight:700;">Expected Treadlife</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">55,000 km</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">65,000 km</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">50,000 km</td>
+            </tr>
+            <tr>
+              <td style="padding:12px 16px; font-weight:700;">Noise Level</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">68 dB (Quiet)</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">69 dB</td>
+              <td style="padding:12px 16px; color:var(--text-muted);">70 dB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW PRODUCTS SECTION 3: Product Fitment & Tyre Sizing FAQ Accordion -->
+  <section class="section-padding" style="background-color: var(--bg-surface-elevated); border-top:1px solid var(--border-color);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Showroom FAQ</div>
+        <h2>Tyre Selection & Sizing Questions</h2>
+      </div>
+
+      <div class="faq-accordion-container">
+        <div class="faq-accordion-item open">
+          <div class="faq-accordion-header">
+            <span>How do I find the exact tyre size written on my current tyres?</span>
+            <div class="faq-accordion-icon">&darr;</div>
+          </div>
+          <div class="faq-accordion-body">
+            Look at the raised lettering on the outer sidewall of your tyre. You will see a sequence like **205/55 R16 91V**. Here 205 is tread width in mm, 55 is aspect ratio %, R16 is 16-inch rim diameter, 91 is load index, and V is speed rating.
+          </div>
+        </div>
+
+        <div class="faq-accordion-item">
+          <div class="faq-accordion-header">
+            <span>Can I change my tyre width or profile without buying new rims?</span>
+            <div class="faq-accordion-icon">&darr;</div>
+          </div>
+          <div class="faq-accordion-body">
+            Yes, within a 3% overall diameter tolerance. Our showroom technicians can check your vehicle's fender clearance to recommend safe alternate sizes for wider grip or smoother ride cushion.
+          </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Restock & Rare Fitment Concierge Section -->
+  <section class="newsletter-section-modern newsletter-theme-catalog">
+    <div class="container">
+      <div class="newsletter-box-modern">
+        <div class="newsletter-tag-pill">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4 6h16v2H4zm2 4h12v2H6zm3 4h6v2H9z"/></svg>
+          <span>Fitment &amp; Restock Concierge</span>
+        </div>
+
+        <h2 class="newsletter-title-modern">Looking for Rare Rim Sizes or Specific Speed Ratings?</h2>
+        <p class="newsletter-subtitle-modern">Subscribe to central warehouse arrivals. We alert you the moment hard-to-find track compounds, run-flats, staggered setups, or all-terrain sizes land in inventory.</p>
+
+        <form class="newsletter-form-row" onsubmit="event.preventDefault(); showToast('Fitment Alert Saved! We will alert you on inventory arrivals.', 'success');">
+          <input type="text" class="form-control" placeholder="Target Tyre Size (e.g. 245/40 R18)" style="max-width:200px;" required>
+          <input type="email" class="form-control" placeholder="Enter your email address..." required>
+          <button type="submit" class="btn btn-primary">
+            <span>Notify Me of Stock</span>
+          </button>
+        </form>
+
+        <div class="newsletter-trust-row">
+          <span class="newsletter-trust-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Direct Central Warehouse Allocation
+          </span>
+          <span class="newsletter-trust-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Price-Match Guarantee on Major Brands
+          </span>
+          <span class="newsletter-trust-item">
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+            Free Valve Stems &amp; Nitrogen Air Fill
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="grid grid-4 footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="WHEELON Home" style="margin-bottom: 16px;">
+            <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="46" height="46">
+            <div class="logo-text-wrap">
+              <span class="logo-brand-name">WHEEL<span>ON</span></span>
+            </div>
+          </a>
+          <p>Your trusted 3D Laser Wheel Alignment & Genuine Tyre Showroom.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home Showroom</a>
+            <a href="home2.html">Home 2 (Promo Offers)</a>
+            <a href="about.html">About Center</a>
+            <a href="services.html">Services & Alignment</a>
+            <a href="products.html">Tyre Showroom Catalog</a>
+            <a href="blog.html">Tyre Care Articles</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms & Conditions</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html">3D Computerized Alignment</a>
+            <a href="services.html">Dynamic Wheel Balancing</a>
+            <a href="services.html">Tyre Replacement & Fitting</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact & Location</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            <div>104 Auto Hub Parkway, Metro Automotive Zone</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ApexTyre & Wheel Alignment Center. All rights reserved.</div>
+        <div class="footer-legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="footer-legal-sep">•</span>
+          <a href="terms.html">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal-backdrop" id="appointmentModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="margin:0; font-size:1.2rem;">Book Service Appointment</h3>
+        <button class="modal-close" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="appointment-form-js">
+          <div class="grid grid-2">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="e.g. +1 555-0192" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Required Service *</label>
+            <select name="service" class="form-control form-select" required>
+              <option value="3D Laser Wheel Alignment">3D Laser Wheel Alignment ($49+)</option>
+              <option value="Dynamic Wheel Balancing">Dynamic Wheel Balancing</option>
+              <option value="Tyre Replacement & Fitting">Tyre Replacement & Fitting</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+            <span>Confirm Appointment Booking</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick View Product Modal -->
+  <div class="modal-backdrop" id="quickViewModal">
+    <div class="modal-content" style="max-width:750px;">
+      <div class="modal-header">
+        <h3 style="margin:0;">Product Technical Details</h3>
+        <button class="modal-close" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body" id="quickViewModalBody">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

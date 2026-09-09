@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found | ApexTyre & Wheel Alignment Center</title>
+  <meta name="description"
+    content="The page you are looking for does not exist. Return to ApexTyre & Wheel Alignment Center homepage or book a 3D wheel alignment appointment.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="topbar">
+    <div class="container topbar-content">
+      <div class="topbar-info">
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+          </svg>
+          <span>104 Auto Hub Parkway, Metro Automotive Zone</span>
+        </div>
+        <div class="topbar-item">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+          </svg>
+          <span>Mon - Sat: 8:00 AM - 8:00 PM | Sun: 9:00 AM - 5:00 PM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="WHEELON Home">
+        <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="40" height="40">
+        <div class="logo-text-wrap">
+          <span class="logo-brand-name">WHEEL<span>ON</span></span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home 2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="toggle-btn theme-toggle-btn header-icon-btn" aria-label="Toggle Dark/Light Mode"
+          title="Toggle Dark/Light Mode">
+          <span class="theme-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" style="color:#f59e0b;">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          </span>
+        </button>
+
+        <button class="toggle-btn rtl-toggle-btn" aria-label="Toggle Language Direction" title="Toggle RTL Mode">
+          <span class="rtl-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="2" y1="12" x2="22" y2="12" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </span>
+          <span class="rtl-text">RTL</span>
+        </button>
+
+        <button class="btn btn-primary btn-sm" onclick="openModal('appointmentModal')">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+            <path
+              d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z" />
+          </svg>
+          <span>Book Service</span>
+        </button>
+
+        <button class="mobile-menu-toggle" aria-label="Toggle Mobile Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay"></div>
+  <div class="mobile-nav-drawer">
+    <div>
+      <a href="index.html" class="logo" aria-label="WHEELON Home" style="margin-bottom: 24px;">
+        <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="46" height="46">
+        <div class="logo-text-wrap">
+          <span class="logo-brand-name">WHEEL<span>ON</span></span>
+        </div>
+      </a>
+      <div class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="home2.html" class="mobile-nav-link">Home 2 (Promo)</a>
+        <a href="about.html" class="mobile-nav-link">About Center</a>
+        <a href="services.html" class="mobile-nav-link">Our Services</a>
+        <a href="products.html" class="mobile-nav-link">Tyre Showroom</a>
+        <a href="blog.html" class="mobile-nav-link">Tyre Care Blog</a>
+        <a href="contact.html" class="mobile-nav-link">Contact & Book</a>
+      </div>
+    </div>
+
+    <div style="margin-top: 24px;">
+      <a href="tel:+18005558973" class="btn btn-secondary btn-block" style="margin-bottom: 10px;">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+          <path
+            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+        </svg>
+        <span>+1 (800) 555-8973</span>
+      </a>
+      <button class="btn btn-primary btn-block" onclick="openModal('appointmentModal')">
+        <span>Book Appointment</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 404 Main Section -->
+  <main class="error-page-section">
+    <div class="container">
+      <div class="error-code-wrapper">
+        <span class="error-code-num">4</span>
+        <div class="error-tyre-icon-box">
+          <svg viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="44" fill="none" stroke="#1e293b" stroke-width="8" />
+            <circle cx="50" cy="50" r="48" fill="none" stroke="#e52e2e" stroke-width="3" stroke-dasharray="10 6" />
+            <circle cx="50" cy="50" r="32" fill="#0f172a" stroke="#e52e2e" stroke-width="3" />
+            <path d="M50 18 L50 82 M18 50 L82 50 M27 27 L73 73 M27 73 L73 27" stroke="#e52e2e" stroke-width="3"
+              stroke-linecap="round" />
+            <circle cx="50" cy="50" r="12" fill="#e52e2e" />
+            <circle cx="50" cy="50" r="6" fill="#ffffff" />
+          </svg>
+        </div>
+        <span class="error-code-num">4</span>
+      </div>
+
+      <div class="section-tag" style="margin: 0 auto 16px auto;">Error 404 • Page Misaligned</div>
+      <h1 class="error-title">Lost Your Alignment? Page Not Found</h1>
+      <p class="error-description">
+        The page you are looking for might have been moved, renamed, or is temporarily out of service. Let's get your
+        journey back on the right track!
+      </p>
+
+      <div class="error-actions-group">
+        <a href="index.html" class="btn btn-primary btn-lg">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+          <span>Return To Homepage</span>
+        </a>
+        <button class="btn btn-secondary btn-lg" onclick="openModal('appointmentModal')">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+            <line x1="16" y1="2" x2="16" y2="6" />
+            <line x1="8" y1="2" x2="8" y2="6" />
+            <line x1="3" y1="10" x2="21" y2="10" />
+          </svg>
+          <span>Book Alignment Appointment</span>
+        </button>
+      </div>
+
+      <div class="error-quick-links-box">
+        <div class="error-quick-links-title">Popular Destinations</div>
+        <div class="error-quick-links-grid">
+          <a href="index.html" class="error-quick-link-chip">🏎️ Main Showroom</a>
+          <a href="services.html" class="error-quick-link-chip">🎯 3D Wheel Alignment</a>
+          <a href="products.html" class="error-quick-link-chip">🛞 Tyre Catalog</a>
+          <a href="about.html" class="error-quick-link-chip">ℹ️ About Center</a>
+          <a href="blog.html" class="error-quick-link-chip">📰 Tyre Care Blog</a>
+          <a href="contact.html" class="error-quick-link-chip">📞 Contact Support</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="WHEELON Home" style="margin-bottom: 16px;">
+            <img src="images/logo-badge.png" alt="WHEELON Emblem" class="logo-badge-img" width="46" height="46">
+            <div class="logo-text-wrap">
+              <span class="logo-brand-name">WHEEL<span>ON</span></span>
+            </div>
+          </a>
+          <p style="color:#94a3b8; font-size:0.875rem; line-height:1.6; margin-bottom:20px;">
+            Premier wheel alignment, laser balancing, and high-performance tyre center equipped with state-of-the-art 3D
+            computerized diagnosis.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home Showroom</a>
+            <a href="home2.html">Home 2 (Promo Offers)</a>
+            <a href="about.html">About Center</a>
+            <a href="services.html">Services & Alignment</a>
+            <a href="products.html">Tyre Showroom Catalog</a>
+            <a href="blog.html">Tyre Care Articles</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html">3D Computerized Alignment</a>
+            <a href="services.html">Dynamic Wheel Balancing</a>
+            <a href="services.html">Tyre Replacement & Fitting</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contact & Location</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+            <div>104 Auto Hub Parkway, Metro Automotive Zone</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ApexTyre & Wheel Alignment Center. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared Appointment Modal -->
+  <div class="modal-backdrop" id="appointmentModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 style="margin:0; font-size:1.2rem;">Book Service Appointment</h3>
+        <button class="modal-close" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="appointment-form-js">
+          <div class="grid grid-2">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input type="text" name="name" class="form-control" placeholder="e.g. John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input type="tel" name="phone" class="form-control" placeholder="e.g. +1 555-0192" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Required Service *</label>
+            <select name="service" class="form-control form-select" required>
+              <option value="3D Laser Wheel Alignment">3D Laser Wheel Alignment ($49+)</option>
+              <option value="Dynamic Wheel Balancing">Dynamic Wheel Balancing</option>
+              <option value="Tyre Replacement & Fitting">Tyre Replacement & Fitting</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">
+            <span>Confirm Appointment Booking</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
