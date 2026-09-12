@@ -556,9 +556,12 @@
   fill: currentColor;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary span,
+[data-theme="light"] .btn-primary,
+[data-theme="light"] .btn-primary span {
   background-color: var(--primary-red);
-  color: #ffffff;
+  color: #ffffff !important;
   box-shadow: var(--shadow-red);
 }
 
@@ -1027,6 +1030,13 @@
   white-space: nowrap;
   padding: 0 24px;
   flex-shrink: 0;
+  color: #ffffff !important;
+}
+
+.newsletter-form-row .btn span,
+[data-theme="light"] .newsletter-form-row .btn,
+[data-theme="light"] .newsletter-form-row .btn span {
+  color: #ffffff !important;
 }
 
 .newsletter-trust-row {
@@ -2281,16 +2291,34 @@ textarea.form-control {
   background: rgba(229, 46, 46, 0.15) !important;
 }
 
-/* Map Pin Card — reinforce against competing inline styles */
-[data-theme="dark"] #findUsSection .map-pin-card-centered {
+/* Map Pin Card — reinforce against competing inline styles in both light and dark themes */
+.map-pin-card-centered,
+#findUsSection .map-pin-card-centered,
+[data-theme="dark"] #findUsSection .map-pin-card-centered,
+[data-theme="light"] #findUsSection .map-pin-card-centered {
   background: rgba(15, 18, 26, 0.92) !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
-}
-
-[data-theme="dark"] #findUsSection .map-pin-card-centered h3 {
   color: #ffffff !important;
 }
 
-[data-theme="dark"] #findUsSection .map-pin-card-centered p {
-  color: #d1d5db !important;
+.map-pin-card-centered h3,
+#findUsSection .map-pin-card-centered h3,
+[data-theme="dark"] #findUsSection .map-pin-card-centered h3,
+[data-theme="light"] #findUsSection .map-pin-card-centered h3,
+[data-theme="light"] #findUsSection .map-pin-card-centered [style*="color:#ffffff"],
+[data-theme="light"] #findUsSection .map-pin-card-centered [style*="color: #ffffff"] {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7) !important;
 }
+
+.map-pin-card-centered p,
+#findUsSection .map-pin-card-centered p,
+[data-theme="dark"] #findUsSection .map-pin-card-centered p,
+[data-theme="light"] #findUsSection .map-pin-card-centered p,
+[data-theme="light"] #findUsSection .map-pin-card-centered [style*="color:#d1d5db"],
+[data-theme="light"] #findUsSection .map-pin-card-centered [style*="color: #d1d5db"],
+[data-theme="light"] #findUsSection .map-pin-card-centered [style*="color:#e2e8f0"] {
+  color: #e2e8f0 !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6) !important;
+}
+
